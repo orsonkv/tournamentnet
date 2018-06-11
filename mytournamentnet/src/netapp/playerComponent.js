@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { stateNet } from './tournamentstate';
+
 
 
 class PlayerComponent extends Component {

@@ -7,9 +7,10 @@ import PlayerComponent from './playerComponent'
 class Tournamentnet extends Component {
     constructor() {
         super();
+        debugger
 
         this.state = {
-            players: stateNet.allPlayers
+            players: stateNet.players
 
 
 
@@ -18,11 +19,10 @@ class Tournamentnet extends Component {
     }
 
     render() {
+        debugger;
         return (
             <div className='tournet'>
                 {
-
-
                     this.state.players.map((player, i) => {
                         return <PlayerComponent player={player} number = {i}/>
                         })

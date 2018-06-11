@@ -46,14 +46,14 @@ export const stateNet = {
 }
 
 
-stateNet.players.forEach(p => {
-    stateNet.users[p.id] = p;
-});
+// stateNet.players.forEach(p => {
+//     stateNet.users[p.id] = p;
+// });
 
-console.log(stateNet);
+// console.log(stateNet);
 
 
-stateNet.pairs.forEach(pair => {
-    alert(stateNet.users[pair.p1]);
-});
+// stateNet.pairs.forEach(pair => {
+//     alert(stateNet.users[pair.p1]);
+// });
 
