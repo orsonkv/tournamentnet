@@ -5,7 +5,7 @@ export const stateNet = {
             countryImg: 'blr',
             firstName: 'Vasya',
             lastName: 'Ivanov',
-            ranking:null,
+            ranking:1921,
             id: 1
              
         },
@@ -13,29 +13,60 @@ export const stateNet = {
             countryImg: 'itl',
             firstName: 'Marko',
             lastName: 'Paolo',
-            ranking: null,
+            ranking: 3300,
             id: 2
         },
         {
             countryImg: 'den',
             firstName: 'Peter',
             lastName: 'Gade',
-            ranking: null, 
+            ranking: 750, 
             id: 3
         },
         {
             countryImg: 'grc',
             firstName: 'Nikolos',
             lastName: 'Poopolos',
-            ranking: null,
+            ranking: 6500,
+            id: 4
+        },
+        {
+            countryImg: 'blr',
+            firstName: 'Vasya',
+            lastName: 'Ivanov',
+            ranking:1921,
+            id: 1
+             
+        },
+        {
+            countryImg: 'itl',
+            firstName: 'Marko',
+            lastName: 'Paolo',
+            ranking: 3300,
+            id: 2
+        },
+        {
+            countryImg: 'den',
+            firstName: 'Peter',
+            lastName: 'Gade',
+            ranking: 750, 
+            id: 3
+        },
+        {
+            countryImg: 'grc',
+            firstName: 'Nikolos',
+            lastName: 'Poopolos',
+            ranking: 6500,
             id: 4
         }
     ],
-    users: {
+    tours: {
 
       
 
     },
+    
+    
     pairs: [{
         p1: 1,
         p2: 3

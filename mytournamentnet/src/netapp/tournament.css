@@ -1,0 +1,16 @@
+.tournet {
+    position: relative;
+}
+
+.player {
+    margin-top: 3px;
+    background-color: burlywood;
+    padding: 5px;
+    width: 150px;
+    height: 15px;
+    border: black 1px solid;
+}
+
+.player .matchScore {
+    right: 200px;
+}
