@@ -5,9 +5,9 @@ export const stateNet = {
             countryImg: 'blr',
             firstName: 'Vasya',
             lastName: 'Ivanov',
-            ranking:1921,
+            ranking: 1921,
             id: 1
-             
+
         },
         {
             countryImg: 'itl',
@@ -20,7 +20,7 @@ export const stateNet = {
             countryImg: 'den',
             firstName: 'Peter',
             lastName: 'Gade',
-            ranking: 750, 
+            ranking: 750,
             id: 3
         },
         {
@@ -33,55 +33,56 @@ export const stateNet = {
         {
             countryImg: 'blr',
             firstName: 'Vasya',
-            lastName: 'Ivanov',
-            ranking:1921,
-            id: 1
-             
+            lastName: 'Fedorov',
+            ranking: 1921,
+            id: 5
+
         },
         {
-            countryImg: 'itl',
-            firstName: 'Marko',
-            lastName: 'Paolo',
+            countryImg: 'eng',
+            firstName: 'David',
+            lastName: 'Braun',
             ranking: 3300,
-            id: 2
+            id: 6
         },
         {
-            countryImg: 'den',
-            firstName: 'Peter',
-            lastName: 'Gade',
-            ranking: 750, 
-            id: 3
+            countryImg: 'ger',
+            firstName: 'Fridrich',
+            lastName: 'Danke',
+            ranking: 750,
+            id: 7
         },
         {
-            countryImg: 'grc',
-            firstName: 'Nikolos',
-            lastName: 'Poopolos',
+            countryImg: 'spa',
+            firstName: 'Pablo',
+            lastName: 'Abian',
             ranking: 6500,
-            id: 4
+            id: 8
         }
     ],
-    tours: {
+    tours: [],
 
-      
 
-    },
-    
-    
     pairs: [{
         p1: 1,
         p2: 3
     }],
-    winners:[],
-    loosers:[]
+    winners: [],
+    loosers: [],
+    users:{}
 
 }
 
+stateNet.tours.unshift(stateNet.players);
 
-// stateNet.players.forEach(p => {
-//     stateNet.users[p.id] = p;
-// });
+stateNet.players.forEach(p => {
+    stateNet.users[p.id] = p;
+});
 
-// console.log(stateNet);
+stateNet.tours = [[1,2,3,4,5,6,7,8],[2,4,6,7],[4,7],[4]];
+
+debugger;
+console.log(stateNet.tours);
 
 
 // stateNet.pairs.forEach(pair => {

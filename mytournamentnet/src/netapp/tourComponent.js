@@ -8,25 +8,33 @@ import PlayerComponent from './playerComponent'
 class TourComponent extends Component {
     constructor(props) {
         super(props);
-       
 
-                        
 
-       
+
+
+
     }
 
 
 
-  
-    
+
+
     render() {
-        
+
         debugger;
 
         return (
             <div className='tour'>
-              <PlayerComponent player = {props.pair.playerA} />
-              <PlayerComponent player = {props.pair.playerB} />
+
+                 {
+                    this.props.tour.map((p, i) => {
+                        return <PlayerComponent player={stateNet.users[p]} number={i} />
+                    })
+                }
+               
+                
+              
+               
             </div>
 
 

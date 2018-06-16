@@ -16,7 +16,7 @@ class PlayerComponent extends Component {
         return (
             <div class="player">
                 <span class="country flag "></span>
-                <span class="playerInfo" data-content_id="" title=""> {this.props.number + 1} {countryImg} {firstName} {lastName} </span>
+                <span class="playerInfo" data-content_id="" title="">  {countryImg} {firstName} {lastName} </span>
                 <span class="matchScore"></span>
             </div>
 

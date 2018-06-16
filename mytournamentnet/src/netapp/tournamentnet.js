@@ -11,19 +11,19 @@ class Tournamentnet extends Component {
     constructor() {
         super();
         debugger
-                   
-       this.state = {
-           players: stateNet.players,
-            tours: []
+
+        this.rangedPlayersArr = this.rangedPlayers();
+        this.pairs = this.makePairs();
+        this.state = {
+            players: this.rangedPlayersArr,
+            pairs: this.pairs,
+            tours: stateNet.tours
+
         }
 
-        this.rengedPlayers();
-        this.makeTours()
-                     
-       this.state = {
-           players: stateNet.players,
-            tours: []
-        }
+
+
+
     }
 
 
@@ -31,44 +31,49 @@ class Tournamentnet extends Component {
     compareAge(playerA, playerB) {
         return playerA.ranking - playerB.ranking;
     }
-    rengedPlayers() {
-        let rangedPlayers = this.state.players;
+    rangedPlayers() {
+        
+        let rangedPlayers = stateNet.players;
+       
+        
+
+        
         rangedPlayers.sort(this.compareAge)
         rangedPlayers.reverse();
-        this.setState({
-            players: rangedPlayers
-        });
+
+        return rangedPlayers;
+
     }
 
-    makeTours(){
-        debugger;
-        let newTours =[];
+    makePairs() {
+      
 
-        for (let i = 0; i < this.state.players.length; i=i+2) {
-            var pairPlayers = {playerA:this.state.players[i],playerB:this.state.players[i+1]}
-            newTours.push(pairPlayers);
-            
+
+        let pairs = [];
+        for (let i = 0; i < this.rangedPlayersArr.length; i = i + 2) {
+            var pairPlayers = { playerA: this.rangedPlayersArr[i], playerB: this.rangedPlayersArr[i + 1] }
+            pairs.push(pairPlayers);
+
         }
 
-        this.setState({
-            tours: newTours
-
-        });
+        return pairs;
 
     }
 
 
     render() {
-        
+
+
         debugger;
 
         return (
             <div className='tournet'>
                 {
-                    this.state.tours.map((pair, i) => {
-                        return <TourComponent pair={pair} number={i} />
+                    this.state.tours.map((tour, i) => {
+                        return <TourComponent tour={tour} number={i} />
                     })
                 }
+
 
             </div>
 
