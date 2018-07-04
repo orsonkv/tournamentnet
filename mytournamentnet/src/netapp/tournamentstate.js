@@ -58,18 +58,23 @@ export const stateNet = {
             lastName: 'Abian',
             ranking: 6500,
             id: 8
+        },
+        {
+            countryImg: 'spa',
+            firstName: 'Pablo',
+            lastName: 'Abian',
+            ranking: 6500,
+            id: 8
         }
+
     ],
     tours: [],
 
 
-    pairs: [{
-        p1: 1,
-        p2: 3
-    }],
+    pairs: [],
     winners: [],
     loosers: [],
-    users:{}
+    users: {}
 
 }
 
@@ -79,7 +84,8 @@ stateNet.players.forEach(p => {
     stateNet.users[p.id] = p;
 });
 
-stateNet.tours = [[1,2,3,4,5,6,7,8],[2,4,6,7],[4,7],[4]];
+stateNet.tours = [[1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6,  8], [2, 4, 6, 7, 2, 4, 6, 7], [4, 7, 4, 7]];
+stateNet.tours.length = 6;
 
 debugger;
 console.log(stateNet.tours);

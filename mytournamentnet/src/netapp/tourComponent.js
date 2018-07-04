@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { stateNet } from './tournamentstate'
+import PareComponent from './parePlayerComponent';
 import PlayerComponent from './playerComponent'
 
 
@@ -27,8 +28,8 @@ class TourComponent extends Component {
             <div className='tour'>
 
                  {
-                    this.props.tour.map((p, i) => {
-                        return <PlayerComponent player={stateNet.users[p]} number={i} />
+                    this.props.tour.map((pair, i) => {
+                        return <PareComponent pair={pair} number={i} />
                     })
                 }
                

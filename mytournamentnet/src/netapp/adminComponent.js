@@ -8,6 +8,7 @@ import { addPlayersToArray } from './functions'
 class AdminComponent extends Component {
     constructor() {
         super();
+        
         debugger
         this.inputFirstName = React.createRef();
         this.inputLastName = React.createRef();

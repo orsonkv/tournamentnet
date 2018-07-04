@@ -17,10 +17,19 @@
     width: 150px;
     height: 15px;
     border: black 1px solid;
+    display: inline-block;
     
   
 }
-
-.player .matchScore {
-    right: 200px;
+ .pair {
+     
+ }
+ .match-score {
+    
+    height: 15px;
+    
+    display: inline-flex;
+}
+.player-in-pair {
+    display: flex;
 }
