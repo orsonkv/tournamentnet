@@ -29,7 +29,7 @@ class TourComponent extends Component {
 
                  {
                     this.props.tour.map((pair, i) => {
-                        return <PareComponent pair={pair} number={i} />
+                        return <PareComponent pair={pair} number={i} key = {i}/>
                     })
                 }
                
